@@ -8,7 +8,6 @@ import "../style/style.css";
 
 class SongList extends Component {
   onSongDelete(id) {
-    console.log(id);
     this.props
       .mutate({ variables: { id } })
       .then(() => this.props.data.refetch());
